@@ -38,7 +38,8 @@ import json, pathlib, shutil, sys, time
 app_home, shortcut, action = sys.argv[1], sys.argv[2], sys.argv[3]
 path = pathlib.Path(app_home) / "keys.json"
 if not path.exists():
-    sys.exit(f"No keys.json in {app_home}; add \"{shortcut}\": \"{action}\" to its global section.")
+    print(f"keys.json: none in {app_home} yet; add \"{shortcut}\": \"{action}\" to its global section.")
+    raise SystemExit(0)
 data = json.loads(path.read_text())
 current = data.get("global", {}).get(shortcut)
 if current == action:
