@@ -4,6 +4,8 @@ One keystroke to reach anything already printed in a Herdr terminal: URLs,
 files, folders, images and `!commands`, as letter badges in a small card.
 Linux, macOS and Windows.
 
+![Screen picker](preview.png)
+
 ```
 Screen 7                                  Enter open · ⇧Enter copy · Esc close
 A  URL   https://herdr.dev/docs
@@ -19,6 +21,12 @@ H  CMD   !git status --short
 This is a **herdr-app** mod (the desktop app), not herdr-tui. Developed against
 herdr-app 0.1.13 / herdr-core 0.1.18 on Linux; the Windows and macOS paths are
 chosen at run time from the app's own `window().platform`.
+
+Shared as a `herdr-mod` repo, which is what puts a mod in the Herdr App gallery
+(<https://herdr.dev/gallery/?type=mods>) under Community: `mods/screen-picker/`
+is the mod, `RECIPE.md` the brief another agent can rebuild it from,
+`preview.png` the picture and `keys.json` the key to merge. Nothing is
+submitted or reviewed — the topic is the entry.
 
 ## Install
 
