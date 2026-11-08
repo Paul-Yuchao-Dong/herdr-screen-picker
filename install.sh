@@ -21,7 +21,8 @@ case "$mode" in
   copy)
     rm -rf "$target"
     mkdir -p "$target"
-    cp "$here/mods/screen-picker/main.js" "$here/mods/screen-picker/mod.json" "$target/"
+    cp "$here/mods/screen-picker/main.js" "$here/mods/screen-picker/scan.js" \
+       "$here/mods/screen-picker/mod.json" "$target/"
     ;;
   link)
     rm -rf "$target"
